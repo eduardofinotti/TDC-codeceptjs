@@ -1,0 +1,22 @@
+{
+  "name": "tdc-project-codcetpjs",
+  "version": "1.0.0",
+  "description": "Project to TDC",
+  "main": "index.js",
+  "scripts": {
+    "android": "codeceptjs run -c codecept.conf.js --override '{\"helpers\": {\"Appium\": { \"app\": \"/Users/eduardofinotti/Desktop/app-devTDC.apk\", \"platform\": \"Android\", \"desiredCapabilities\": { \"deviceName\": \"emulator-5554\", \"platformVersion\": \"6.0\", \"autoGrantPermissions\": true }}}}'",
+    "iOS": "codeceptjs run -c codecept.conf.js --override '{\"helpers\": {\"Appium\": { \"app\": \"/Users/eduardofinotti/Desktop/DeliveryMuchDevSimulatorTDC.app\", \"platform\": \"iOS\", \"desiredCapabilities\": {\"deviceName\": \"iPhone Xʀ\", \"platformVersion\": \"12.2\"}}}}'"
+  },
+  "author": "Eduardo Finotti",
+  "license": "ISC",
+  "dependencies": {
+    "appium-doctor": "^1.9.0",
+    "codeceptjs": "^2.0.8",
+    "webdriverio": "^5.7.8"
+  },
+  "bundledDependencies": [
+    "appium-doctor",
+    "codeceptjs",
+    "webdriverio"
+  ]
+}
